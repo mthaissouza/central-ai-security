@@ -1,0 +1,33 @@
+.Dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #060606;
+    color: #fff;
+    height: 320px;
+    width: 500px;
+    
+}
+
+.Dialog .Title {
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.Dialog .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #222327;
+    margin: 0px 10px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.Dialog .Container .TextGray {
+    font-size: 16px;
+    color: #beb7bb;
+}
