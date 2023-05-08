@@ -23,11 +23,12 @@
 
     background-color: #222327;
     margin: 0px 10px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 6px;
 }
 
 .Dialog .Container .TextGray {
+    padding-top: 5px;
     font-size: 16px;
     color: #beb7bb;
 }

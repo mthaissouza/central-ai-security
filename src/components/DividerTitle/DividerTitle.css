@@ -1,0 +1,20 @@
+.DividerTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.DividerTitle .Title {
+    font-weight: 700;
+    white-space: pre;
+    color: white;
+}
+
+.DividerTitle .Divider {
+    width: 100%;
+    margin-left: 2vh;
+    height: 0.3vh;
+    background-color: #D2E054;
+}

@@ -7,8 +7,18 @@ const Card = (props) => {
   const { name, status, species, image, gender, location, origin } = props;
   const [open, setOpen] = useState(false);
 
+  const handleColorStatus = (statusCharacter) => {
+    if (statusCharacter === "Alive") {
+      return "#04e800";
+    } else if (statusCharacter === "Dead") {
+      return "#e80000";
+    } else {
+      return "#686868";
+    }
+  };
+
   const statusStyle = {
-    backgroundColor: status === "Alive" ? "#04e800" : "#e80000",
+    backgroundColor: handleColorStatus(status),
   };
 
   const handleClickOpen = () => {

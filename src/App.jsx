@@ -2,39 +2,47 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Card from "./components/Card/Card";
 import api from "./services/api";
+import NameImage from "./assets/imgs/name.png";
+import Search from "./components/Searcher/Searcher";
+import DividerTitle from "./components/DividerTitle/DividerTitle";
 
 const App = () => {
-  const [personagens, setPersonagens] = useState([]);
+  const [character, setCharacter] = useState([]);
   const [value, setValue] = useState("");
 
   useEffect(() => {
-    api
-      .get(`https://rickandmortyapi.com/api/character/?name=${value}`)
-      .then((res) => {
-        if (res.error) {
-          console.log(res.error);
-        } else {
-          console.log("RES: ", res.data.results);
-          setPersonagens(res.data.results);
-        }
-      });
+    setTimeout(() => {
+      api
+        .get(`https://rickandmortyapi.com/api/character/?name=${value}`)
+        .then((res) => {
+          if (res.error) {
+            console.log(res.error);
+          } else {
+            setCharacter(res.data.results);
+          }
+        });
+    }, 1000);
   }, [value]);
 
   return (
     <div className="App">
-      <h1>Meu projeto React</h1>
+      <div className="Header">
+        <img className="HeaderImg" src={NameImage} />
+        <Search value={value} onChange={(e) => setValue(e.target.value)}></Search>
+      </div>
+      <DividerTitle title={'List a character'}></DividerTitle>
       <div className="Cards">
-        {personagens.map((personagem) => {
+        {character.map((character) => {
           return (
-            <div key={personagem.id}>
+            <div key={character.id}>
               <Card
-                image={personagem.image}
-                name={personagem.name}
-                status={personagem.status}
-                species={personagem.species}
-                gender={personagem.gender}
-                location={personagem.location.name}
-                origin={personagem.origin.name}
+                image={character.image}
+                name={character.name}
+                status={character.status}
+                species={character.species}
+                gender={character.gender}
+                location={character.location.name}
+                origin={character.origin.name}
               />
             </div>
           );

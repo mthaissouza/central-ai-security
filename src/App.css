@@ -3,3 +3,24 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.App .Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 350px;
+  min-height: 350px;
+  margin-bottom: 15px;
+}
+
+.App .HeaderImg {
+  width: 80vh;
+}
+
+.App .Divider {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 5px 15px; 
+}
