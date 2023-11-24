@@ -1,26 +1,103 @@
-.App .Cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App .Header {
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(3, 0, 31);
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+}
+
+.sideBar {
+  flex: 3;
+  border-right: 1px solid rgb(100, 100, 100);
+}
+
+.main {
+  flex: 9;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.upperSide {
+  padding: 2.5rem;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 70%;
+}
+
+.upperSideTop {
+  display: flex;
   align-items: center;
-  height: 350px;
-  min-height: 350px;
-  margin-bottom: 15px;
+  margin-bottom: 2.5rem;
 }
 
-.App .HeaderImg {
-  width: 80vh;
+.addBtn {
+  height: 2rem;
+  padding-right: 1rem;
 }
 
-.App .Divider {
+.midBtn {
+  background: #5a4bff;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: 25rem;
   display: flex;
+  align-items: center;
   justify-content: center;
-  width: 80%;
-  margin: 5px 15px; 
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.midBtn:disabled {
+  cursor: not-allowed;
+}
+
+.query {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98, 98, 98, 1);
+  cursor: pointer;
+}
+
+.query:hover {
+  background: rgba(98, 98, 98, 1);
+}
+
+.query > img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}
+
+.main {
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 6rem 10rem;
 }

@@ -1,0 +1,52 @@
+.chatFooter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp {
+  padding: 0.5rem;
+  background: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  width: 68rem;
+}
+
+.inp > input {
+  width: calc(100% - 3rem);
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+  border: none;
+}
+
+.inp > input,
+.send {
+  background: transparent;
+}
+
+.uploaded-file2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: #374151;
+  margin-left: 1rem;
+}
+
+.uploaded-file p {
+  color: white;
+  margin-right: 1rem;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}

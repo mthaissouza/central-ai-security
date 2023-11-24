@@ -1,0 +1,30 @@
+.lowerSide {
+  padding: 2rem;
+}
+
+.listItems {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.listItems:hover {
+  background: rgba(98, 98, 98, 1);
+  border-radius: 0.5rem;
+}
+
+.listItemsImg {
+  margin: 1rem;
+  padding-right: 1rem;
+}
+
+.MuiIcon-root {
+  height: 2.0rem !important;
+  padding-right: 1rem !important;
+}
+
+.listItems:nth-child(1).listItemsImg {
+  margin-right: 0.5rem;
+}

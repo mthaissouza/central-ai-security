@@ -1,0 +1,20 @@
+.query {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98, 98, 98, 1);
+  cursor: pointer;
+}
+
+.query:hover {
+  background: rgba(98, 98, 98, 1);
+}
+
+.query > img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}

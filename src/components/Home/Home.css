@@ -1,0 +1,19 @@
+.division {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  font-size: 8rem;
+  padding-left: 10rem;
+  letter-spacing: 0.2rem;
+  font-family: 'Montserrat Extra';
+  font-weight: 550;
+}
+
+.chatImgHome {
+  width: 30rem;
+  height: 30rem;
+}
